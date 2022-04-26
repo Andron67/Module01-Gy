@@ -4,12 +4,101 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet" /> 
 	<link rel="stylesheet" href="style/main.css">
 	<title>Диплом 1</title>
 </head>
 
 <body>
-	<h1>Привет Андрюха! Ты самый крутой WEB разработчик!</h1>
-	<h2>Ты зарабатываешь на WEB разработке более 50 тысяч рублей в месяц.</h2>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-container container">
+				<div class="header-logo__nav">
+					<div class="header-logo">
+						<a href="#" class="header-logo-link"></a>
+					</div>
+					<div class="header-burger">
+						<button class="burger" onclick = "openModal()"></button>
+					</div>
+					<nav>
+						<ul class="header-nav">
+							<li class="header-menu-item">
+								<a href="#" class="header-menu-link">Мероприятие</a>
+							</li>
+							<li class="header-menu-item">
+								<a href="#" class="header-menu-link">Расписание</a>
+							</li>
+							<li class="header-menu-item">
+								<a href="#" class="header-menu-link">О компании</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-socials">
+					<a href="#" class="header-socials__contakt">
+						<img src="icons/IN.svg" alt="Контакт">
+					</a>
+					<a href="#" class="header-socials__facebook">
+						<img src="icons/FB.svg" alt="Фэйсбук">
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<h1>Привет Андрюха! Ты великолепный WEB разработчик</h1>
+				<h2>Ты зарабатываешь на разработке более 50 тысяч рублей в месяц.</h2>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal" id = "modal">
+		<div class="modal-container">
+			<div class="header-modal">
+				<div class="header-logo">
+					<a href="#" class="header-logo-link"></a>
+				</div>
+				<button class="burger-close" onclick="closeModal()"></button>
+			</div>
+			<ul class="header-nav">
+				<li class="header-menu-item">
+					<a href="#" class="header-menu-link">Мероприятие</a>
+				</li>
+				<li class="header-menu-item">
+					<a href="#" class="header-menu-link">Расписание</a>
+				</li>
+				<li class="header-menu-item">
+					<a href="#" class="header-menu-link">О компании</a>
+				</li>
+			</ul>
+			<div class="modal-socials">
+				<div class="header-socials">
+					<a href="#" class="header-socials__contakt">
+						<img src="icons/IN.svg" alt="Контакт">
+					</a>
+					<a href="#" class="header-socials__facebook">
+						<img src="icons/FB.svg" alt="Фэйсбук">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-block-footer"></div>
+	</div>
+	
+	<script>
+		// Menu
+		function openModal() {
+         document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+         document.getElementById("modal").style.top = "-400px";
+       }
+	</script>
 </body>
 </html>
