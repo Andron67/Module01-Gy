@@ -415,6 +415,23 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	transition: .9s;
+}
+
+.training-schedule-item:hover {
+	background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+}
+
+.training-schedule-item:hover .training-schedule-item-body__text {
+	display: block;
+}
+
+.schedule-item__active {
+	background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+}
+
+.schedule-item__active .training-schedule-item-body__text {
+	display: block;
 }
 
 .training-schedule-item-date {
@@ -430,12 +447,23 @@ body {
 }
 
 .training-schedule-item-body p {
-	margin-top: 40px;
+	margin-top: 10px;
 	color: #2B3541;
-	font-family: ' Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	line-height: 1.25;
+	line-height: 1.5;
 	font-weight: 700;
+}
+
+.training-schedule-item-body__text {
+	display: none;
+}
+
+.training-schedule-item-body__text p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.50;
+	font-weight: 400;
 }
 
 .training-schedule-cards {
@@ -510,6 +538,14 @@ body {
 	.training-schedule-item:nth-child(6) {
 		grid-column: 2/3;
 		grid-row: 3/4;
+	}
+
+	.training-schedule-item-body__text {
+		max-width: 230px;
+	}
+
+	.training-schedule-item-body__text p {
+		font-size: 12px;
 	}
 }
 
