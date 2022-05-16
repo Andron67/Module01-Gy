@@ -39,14 +39,10 @@ body {
 }
 
 /*--------HEADER-----------*/
-.header {
-	border: 1px solid #000;
-}
-
-.header-container {
+.block-nav {
 	align-items: center;
 	display: flex;
-	min-height: 126px;
+	min-height: 96px;
 	justify-content: space-between;
 }
 
@@ -98,18 +94,797 @@ body {
 }
 
 .header-socials {
-	
+	display: flex;
 }
 
 .header-socials__contakt {
+	display: block;
 	margin-right: 30px;
+	transition: all .3s ease 0s;
+	transform: scale(1);
+	opacity: 0.8;
 }
 
-.header-socials__facebook {
+.header-socials__contakt:hover {
+	transform: scale(1.2);
+	opacity: 1;
+}
+/*-------- MAIN__BANNER -----------*/
+.main-banner {
+	padding-top: 226px;
+	position: relative;
+	margin-bottom: 100px;
+	width: 100%;
+}
 
+.main-banner-content {
+	max-width: 676px;
+}
+
+.banner-content-title h1 {
+	color: #2B3541;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: 3.5pt;
+}
+
+.banner-content-subtitle {
+	margin-bottom: 22px;
+}
+
+.banner-content-subtitle h3 {
+	color: #2B3541;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: 2.7pt;
+}
+
+.banner-content-subtitle h3 span {
+	color: #2B3541;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+.banner-content-text {
+	max-width: 297px;
+	margin: 0px 0px 223px 90px;
+}
+
+.banner-content-text p {
+	color: #2B3541;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 1.1pt;
+	margin-bottom: 40px;
+}
+
+.main-button {
+	border: none;
+	border-radius: 5px;
+	background-color: #FBF138;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
+	gap: 10px;
+	padding: 20px 0px;
+	transition: all .3s ease 0s;
+}
+
+.main-button:hover {
+	background-color: #2B3541;
+	color: #FBF138;
+	cursor: pointer;
+}
+
+.main-button a {
+	padding: 20px 30px;
+	color: #2B3541;
+	text-transform: uppercase;
+	letter-spacing: 1pt;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.main-button a:hover {
+	color: #FBF138;
+}
+
+.main-button-scroll {
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border-radius: 26px;
+	width: 52px;
+	height: 52px;
+}
+
+.button-arrow {
+	width: 42.2px;
+	height: 42.2px;
+}
+
+/* -- main-banner-box -- */
+.main-banner-box {
+	display: flex;
+	position: absolute;
+	justify-content: flex-end;
+	max-width: 998px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	right: -75px;
+	z-index: -20;
+}
+
+.banner-box-blocks {
+	display: flex;
+	max-width: 790px;
+	width: 100%;
+	gap: 20px;
+}
+
+.banner-box-block__left {
+	background-image: linear-gradient(#FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+	flex-basis: 70%;
+	height: 850px;
+	opacity: .2;
+}
+
+.banner-box-block__right {
+	background-image: linear-gradient(#FDF9B6 0%, rgba(253, 249, 182, 0.7) 100%);
+	flex-basis: 30%;
+	height: 850px;
+	opacity: .2;
+}
+
+.banner-box-image {
+	position: absolute;
+	bottom: 0px; 
+	right: -75px;
+}
+
+.banner-box-image img {
+	max-width: 992px;
+	width: 100%;
+	overflow: hidden;
+}
+
+/*-------- SECTION UPCOMING-EVENTS -----------*/
+.upcoming-events {
+	margin-bottom: 100px;
+}
+
+.upcoming-events__title {
+	color: #2B3541;
+	font-size: 40px;
+	line-height: 1.25;
+	font-weight: 700;
+	padding: 40px 0px;
+}
+
+.upcoming-events-cards {
+	display: flex;
+	gap: 20px;
+}
+
+.upcoming-events-card {
+	border: 1px solid #000;
+	position: relative;
+	flex: 1 1 33.333%;
+}
+
+.events-card__01 {
+	max-width: 367px;
+	width: 100%;
+   background-image: url(../images/maraphon.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-card__02 {
+	max-width: 367px;
+	width: 100%;
+   background-image: url(../images/trener.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-card__03 {
+	max-width: 367px;
+	width: 100%;
+   background-image: url(../images/yoga.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.upcoming-events-card__gradient {
+	padding-top: 20px;
+	background: linear-gradient(180deg, rgb(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+	height: 100%;
+	width: 100%;
+}
+
+.upcoming-events-card__gradient:hover {
+	background: linear-gradient(180deg, rgb(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+	transition: 0.9s;
+}
+
+.upcoming-events-card__button {
+	border-radius: 5px;
+	display: inline-block;
+	background-color: #2B3541;
+	gap: 10px;
+	margin: 10px 0px 300px 30px;
+	padding: 20px 30px;
+	opacity: 0;
+	transition: all .3s ease 0s;
+}
+
+.upcoming-events-card__button a {
+	color: #FBF138;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.upcoming-events-card:hover .upcoming-events-card__button {
+	opacity: 1;
+}
+
+.upcoming-events-card:hover .upcoming-events-card__type {
+	opacity: 0;
+}
+
+.upcoming-events-card__data {
+	margin: 0px 0px 20px 30px;
+}
+
+.upcoming-events-card__data p {
+	color: #2B3541;
+	opacity: .6;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.upcoming-events-card__title {
+	margin-left: 30px;
+}
+
+.upcoming-events-card__title h3 {
+	color: #2B3541;
+	max-width: 260px;
+	font-size: 28px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.upcoming-events-card__type {
+	background-color: #FBF138;
+	position: absolute;
+	bottom: 0px; 
+	right: 0px;
+	padding: 10px 20px;
+}
+
+.upcoming-events-card__type p {
+	color: #2B3541;
+	font-family: ' Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+/*-------- TRAINING SCHEDULE -----------*/
+.training-schedule-container {
+	margin-bottom: 100px;
+}
+
+.training-schedule-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 38px;
+}
+
+.training-schedule-title {
+	width: 356px;
+}
+
+.training-schedule-title h2 {
+	color: #2B3541;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.training-schedule-item {
+	padding: 20px;
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.training-schedule-item-date {
+	text-align: end;
+}
+
+.training-schedule-date p {
+	color: #2B3541;
+	font-family: ' Montserrat', sans-serif;
+	font-size: 28px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.training-schedule-item-body p {
+	margin-top: 40px;
+	color: #2B3541;
+	font-family: ' Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.training-schedule-cards {
+	display: grid;
+	grid-template-rows: 250px 60px 90px 280px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.training-schedule-item:nth-child(1) {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.training-schedule-item:nth-child(2) {
+	grid-column: 2/3;
+	grid-row: 1/4;
+}
+
+.training-schedule-item:nth-child(3) {
+	grid-column: 3/4;
+	grid-row: 1/3;
+}
+
+.training-schedule-item:nth-child(4) {
+	grid-column: 1/2;
+	grid-row: 2/5;
+}
+
+.training-schedule-item:nth-child(5) {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+.training-schedule-item:nth-child(6) {
+	grid-column: 3/4;
+	grid-row: 3/5;
+}
+
+@media(max-width: 768px) {
+	.training-schedule-cards {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 332px 224px 224px;
+		grid-auto-flow: row;
+	}
+   
+	.training-schedule-item:nth-child(1) {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	
+	.training-schedule-item:nth-child(4) {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	
+	.training-schedule-item:nth-child(2) {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	
+	.training-schedule-item:nth-child(5) {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	
+	.training-schedule-item:nth-child(3) {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	
+	.training-schedule-item:nth-child(6) {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+}
+
+@media(max-width: 479px) {
+	.training-schedule-cards {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-auto-flow: row;
+	}
+
+	.training-schedule-item:nth-child(1) {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	
+	.training-schedule-item:nth-child(4) {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	
+	.training-schedule-item:nth-child(2) {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	
+	.training-schedule-item:nth-child(5) {
+		grid-column: 1/2;
+		grid-row: 4/5;
+	}
+	
+	.training-schedule-item:nth-child(3) {
+		grid-column: 1/2;
+		grid-row: 5/6;
+	}
+	
+	.training-schedule-item:nth-child(6) {
+		grid-column: 1/2;
+		grid-row: 6/7;
+	}
+}
+
+/*-------- SUBSCRIPTION FORM  -----------*/
+.subscription-form {
+	background-color: #F3F3F3;
+	margin-bottom: 100px;
+}
+
+.container-form {
+	display: flex;
+	justify-content: center;
+}
+
+.subscription-form-box {
+	padding: 80px 20px;
+}
+
+.form-title {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.form-title h2 {
+	color: #2B3541;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 700;
+	z-index: 5;
+}
+
+.form-title-circle {
+	position: absolute;
+	top: -20px;
+	left: -35px;
+	border-radius: 50%;
+	background-color: #FBF138;
+	width: 53px;
+	height: 53px;
+}
+
+.subscription-form__block input[type = "email"] {
+	background-color: #fff;
+	max-width: 372px;
+	width: 100%;
+	padding: 20px 0px 20px 20px;
+}
+
+.subscription-form__block form {
+	margin-bottom: 13px;
+}
+
+.form-button {
+	background-color: #FBF138;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.2);
+	color: #2B3541;
+	padding: 18px 43px;
+	margin: 10px 0px 10px 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all .3s ease 0s;
+}
+
+.form-button:hover {
+	cursor: pointer;
+	color: #FBF138;
+	background-color: #2B3541;
+}
+
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 35px;
+   cursor:pointer;
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
+.checkbox:checked + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 8px);
+   background-color: #2B3541;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.checkbox:checked + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 1;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: transparent;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 0;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-position: 0 -12px;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+}
+.radio:checked + label::before{
+   border-radius: 100%;
+}
+
+/*-------- ABOUT COMPANY -----------*/
+.about-company {
+	
+}
+
+.about-company-description-box__image {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-company-description-box-title {
+	margin-bottom: 20px;
+}
+
+.about-company-description-box-title h2 {
+	color: #2B3541;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.about-company-description-box-text {
+	max-width: 483px;
+	width: 100%;
+	margin-bottom: 34px;
+}
+
+.about-company-description-box-text p {
+	color: #2B3541;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.about-company-description-box-button a {
+	color: #2B3541;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.2);
+	display: inline-block;
+	background-color: #FBF138;
+	padding: 20px 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	transition: all .3s ease 0s;
+}
+
+.about-company-description-box-button a:hover {
+	color: #FBF138;
+	background-color: #2B3541;
+}
+
+.about-company-description-image img {
+	max-width: 583px;
+	width: 100%;
+}
+
+
+.about-company-benefits {
+	margin: 80px 0px 100px 0px;
+}
+
+.about-company-benefits-items {
+	display: flex;
+	justify-content: space-between;
+	gap: 67px;
+}
+
+@media(max-width: 768px) {
+	.about-company-benefits-items {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about-company-description-box-title h2 {
+		font-size: 26px;
+	}
+}
+
+@media(min-width: 479px) {
+	.about-company-footer__media {
+		display: none;
+	}
+}
+
+@media(max-width: 479px) {
+	.about-company-benefits-items {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.about-company-description-box-title h2 {
+		font-size: 26px;
+	}
+
+	.about-company-footer__media {
+		display: block;
+	}
+}
+
+.about-company-benefits-items-title {
+	margin-bottom: 20px;
+}
+
+.about-company-benefits-items-title h3 {
+	color: #2B3541;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.about-company-benefits-items-text p {
+	color: #2B3541;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+/*-------- FOOTER -----------*/
+.footer {
+	background-color: #F3F3F3;
+	min-height: 149px;
+}
+
+.footer-mail-title {
+	position: relative;
+}
+
+.footer-mail-title h3 {
+	color: #2B3541;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	z-index: 5;
+}
+
+.footer-title-circle {
+	position: absolute;
+	top: -12px;
+	left: -15px;
+	border-radius: 50%;
+	background-color: #FBF138;
+	width: 25px;
+	height: 25px;
+}
+
+.footer-rights {
+	margin: 30px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-rights p {
+	color: #2B3541;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 /*-------- RESPONSIVE -----------*/
+@media(max-width: 1120px) {
+	.main-banner-box {
+		justify-content: center;
+	}
+
+	.banner-box-block__left {
+		height: 810px;
+	}
+
+	.banner-box-block__right {
+		height: 810px;
+	}
+
+	.banner-box-image {
+		bottom: 0px;
+		right: 60px;
+	}
+
+	.banner-content-title h1 {
+		font-size: 32px;
+	}
+
+	.banner-content-text {
+		margin: 0px 0px 230px 0px;
+	}
+
+	.banner-content-text p {
+		margin-bottom: 33px;
+	}
+	
+}
 
 @media(min-width: 769px) {
 	.header-burger {
@@ -118,16 +893,222 @@ body {
 }
 
 @media(max-width: 768px) {
-	nav {
-		display: none;
-	}
-}
-
-@media(max-width: 768px) {
 	.header-logo__nav {
 		flex-basis: 33%;
 	}
+
+	nav {
+		display: none;
+	}
+
+	.main-banner {
+		padding: 26px 0px 0px 0px;
+	}
+	
+	.main-banner-content {
+		max-width: 676px;
+	}
+
+	.banner-content-title h1 {
+		font-size: 26px;
+	}
+
+	.banner-content-subtitle h3 {
+		font-size: 26px;
+	}
+	
+	.banner-content-subtitle h3 span {
+		font-size: 26px;
+	}
+
+	.banner-content-text {
+		margin-bottom: 84px;
+	}
+
+	.main-banner-box {
+		right: 0px;
+		justify-content: flex-end;
+	}
+
+	.banner-box-blocks {
+		max-width: 352px;
+		width: 100%;
+		gap: 6px;
+	}
+
+	.banner-box-block__left {
+		height: 429px;
+	}
+
+	.banner-box-block__right {
+		height: 429px;
+	}
+
+	.banner-box-image {
+		max-width: 399px;
+		width: 100%;
+		top: 107px;
+		right: 0px;
+	}
+
+	/*-------- section upcoming-events -----------*/
+	.upcoming-events__title {
+		font-size: 26px;
+	}
+
+	.upcoming-events-cards {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr); 
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+    
+	.events-card__01 {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.events-card__02 {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	.events-card__03 {
+		max-width: 748px;
+		width: 100%;
+   	height: 336px;
+   	background-image: url(../images/yoga_2.jpg);
+   	background-repeat: no-repeat;
+   	background-size: cover;
+		background-position: center;
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+
+	/*-------- TRAINING SCHEDULE -----------*/
+	.training-schedule-title {
+		max-width: 207px;
+	}
+
+	.training-schedule-title h2 {
+		font-size: 26px;
+	}
+
+	.training-schedule-date p {
+		font-size: 16px;
+	}
+
+	/*-------- subscription form  -----------*/
+	.subscription-form-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.form-title {
+		text-align: center;
+		margin: 0px auto;
+		max-width: 201px;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+
+	.form-title h2 {
+		font-size: 26px;
+		line-height: 1.25;
+	}
 }
+
+@media(max-width: 479px) {
+	.banner-content-title h1 {
+		font-size: 21px;
+		letter-spacing: 2.5pt;
+	}
+
+	.header-logo__nav {
+		flex-basis: 50%;
+	}
+
+	.main-button-scroll {
+		display: none;
+	}
+	
+	.main-banner-box {
+		position: absolute;
+		left: 0px;
+		top: 321px;
+	}
+
+	.banner-box-block__left {
+		height: 359px;
+	}
+
+	.banner-box-block__right {
+		height: 359px;
+	}
+	
+	.banner-box-image {
+		top: 20px;
+	}
+
+/*--upcoming-events--*/
+	.upcoming-events {
+		margin-top: 457px;
+	}
+
+	.upcoming-events__title {
+		font-size: 26px;
+	}
+
+	.upcoming-events-card__data p {
+		font-size: 12px;
+	}
+
+	.upcoming-events-card__title h3 {
+		font-size: 16px;
+	}
+
+	.events-card__01 {
+		width: 165px;
+		height: 309px;
+	}
+
+	.events-card__02 {
+		width: 165px;
+		height: 309px;
+	}
+
+	.events-card__03 {
+		width: 340px;
+		background: url('../images/yoga_2.jpg') -340px 0px no-repeat;
+		height: 336px;
+	}
+}
+
+@media(max-width: 368px) {
+	.banner-content-title h1 {
+		font-size: 21px;
+	}
+
+	.main-banner-box {
+		position: absolute;
+		left: 0px;
+		top: 321px;
+	}
+
+	.banner-box-block__left {
+		height: 256px;
+	}
+
+	.banner-box-block__right {
+		height: 256px;
+	}
+	
+	.banner-box-image  {
+		left: 0px;
+		top: 20px;
+	}
+}
+
 
 /*-------- MODAL -----------*/
 .burger {
@@ -143,6 +1124,7 @@ body {
 .modal {
 	background-color: #F3F3F3;
 	max-width: 587px;
+	width: 100%;
 	text-align: end;
 	position: absolute;
 	top: -600px;
@@ -151,6 +1133,12 @@ body {
 	margin: 15px auto -30px;
 	box-sizing: border-box;
 	transition: .5s;
+}
+
+@media(max-width: 479px) {
+	.modal {
+		left: 0%;
+	}
 }
 
 .modal-container {
@@ -198,7 +1186,10 @@ body {
 
 .modal-block-footer {
 	background-color: #2B3541;
-	width: 587px;
 	height: 135px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 
