@@ -63,7 +63,7 @@
 								<a href="#">узнать подробнее</a>
 							</button>
 						</div>
-						<a href = "#main-button-scroll" class="main-button-scroll">
+						<a href = "#upcoming-events-scroll" class="main-button-scroll scroll">
 							<img src="icons/arrow.svg" alt="Галка" class = "button-arrow">
 						</a>
 					</div>
@@ -80,31 +80,29 @@
 				</div>
 			</div>
 
-			<section class="upcoming-events" id = "main-button-scroll">
+			<section class="upcoming-events" id = "upcoming-events-scroll">
 				<div class="upcoming-events-container container">
 					<h2 class = "upcoming-events__title">Ближайшие события</h2>
 					<div class="upcoming-events-cards">
 						<div class="upcoming-events-card events-card__01">
-				
-								<div class="upcoming-events-card__gradient">
-									<div class="upcoming-events-card__data">
-										<p>29.06-4.07</p>
-									</div>
-									<div class="upcoming-events-card__title">
-										<h3>Марафон выносливости</h3>
-									</div>
-									<div class="upcoming-events-card__button">
-										<a href="#">участвовать</a>
-									</div>
-									<p class = "upcoming-events-card__type">вебинар</p>
+							<div class="upcoming-events-card__gradient">
+								<div class="upcoming-events-card__data">
+									<p>29.06-4.07</p>
 								</div>
-							
+								<div class="upcoming-events-card__title">
+									<h3>Марафон выносливости</h3>
+								</div>
+								<div class="upcoming-events-card__button">
+									<a href="#">участвовать</a>
+								</div>
+								<p class = "upcoming-events-card__type">марафон</p>
+							</div>
 						</div>
 		
 						<div class="upcoming-events-card events-card__02">
 							<div class="upcoming-events-card__gradient">
 								<div class="upcoming-events-card__data">
-									<p>29.06-4.07</p>
+									<p>9.07</p>
 								</div>
 								<div class="upcoming-events-card__title">
 									<h3>Как стать тренером?</h3>
@@ -119,7 +117,7 @@
 						<div class="upcoming-events-card events-card__03">
 							<div class="upcoming-events-card__gradient">
 								<div class="upcoming-events-card__data">
-									<p>29.06-4.07</p>
+									<p>15.07</p>
 								</div>
 								<div class="upcoming-events-card__title">
 									<h3>Йога, как стиль жизни</h3>
@@ -134,14 +132,14 @@
 				</div>
 			</section>
 
-			<section class="training-schedule">
+			<section id = "training-schedule-section" class="training-schedule">
 				<div class="training-schedule-container container">
 					<div class="training-schedule-header">
 						<div class="training-schedule-title">
 							<h2>Расписание тренировок</h2>
 						</div>
 						<div class="training-schedule-date">
-							<p>22-28 июня</p>
+							<p>22 - 28 июня</p>
 						</div>
 					</div>
 
@@ -252,7 +250,7 @@
 								<button type = "submit" class = "form-button">Подписаться</button>
 								<div class="agreement">
 									<input type="checkbox" id = "01" class = "checkbox">
-									<label for="01">Согласен с обработкой<a href="#" target = "_blank">Персональных данных</a></label>
+									<label for="01">Согласен с обработкой<a href="#" target = "_blank">  Персональных данных</a></label>
 								</div>
 							</form>
 						</div>
@@ -260,7 +258,7 @@
 				</div>
 			</section>
 
-			<section class="about-company">
+			<section id = "about-company-section" class="about-company">
 				<div class="about-company-container container">
 					<div class="about-company-content">
 						<div class="about-company-description-box__image">
@@ -322,7 +320,7 @@
 							<div class="about-company-description-box-button">
 								<a href="#">Записаться</a>
 							</div>
-							<div class="about-company-description-image">
+							<div class="about-company-image">
 								<img src="images/boxer.jpg" alt="Бодибилдерша">
 							</div>	
 						</div>
@@ -333,44 +331,46 @@
 
 		<footer class="footer">
 			<div class="footer-container container">
-				<div class="block-nav">
-					<div class="header-logo__nav">
-						<div class="header-logo">
-							<a href="#" class="header-logo-link"></a>
+				<div class="footer-content">
+					<div class="footer-block-nav">
+						<div class="header-logo__nav footer-logo__nav">
+							<div class="header-logo">
+								<a href="#" class="header-logo-link"></a>
+							</div>
+							<nav class = "nav-footer">
+								<ul class="header-nav">
+									<li class="header-menu-item">
+										<a href="#upcoming-events-scroll" class="footer-menu-link scroll">Мероприятие</a>
+									</li>
+									<li class="header-menu-item">
+										<a href="#training-schedule-section" class="footer-menu-link scroll">Расписание</a>
+									</li>
+									<li class="header-menu-item">
+										<a href="#about-company-section" class="footer-menu-link scroll">О компании</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
-						<div class="header-burger">
-							<button class="burger" onclick = "openModal()"></button>
+
+						<div class="footer-mail__socials">
+							<div class="footer-mail-title">
+								<a href = "mailto:info@freefit.com">info@freefit.com</a>
+								<div class="footer-title-circle"></div>
+							</div>
+							<div class="header-socials footer-socials">
+								<a href="#" target = "_blank" class="header-socials__contakt">
+									<img src="icons/IN.svg" alt="Контакт">
+								</a>
+								<a href="#" target = "_blank" class="header-socials__contakt">
+									<img src="icons/FB.svg" alt="Фэйсбук">
+								</a>
+							</div>
 						</div>
-						<nav>
-							<ul class="header-nav">
-								<li class="header-menu-item">
-									<a href="#" class="header-menu-link">Мероприятие</a>
-								</li>
-								<li class="header-menu-item">
-									<a href="#" class="header-menu-link">Расписание</a>
-								</li>
-								<li class="header-menu-item">
-									<a href="#" class="header-menu-link">О компании</a>
-								</li>
-							</ul>
-						</nav>
 					</div>
-					<div class="footer-mail-title">
-						<h3>info@freefit.com</h3>
-						<div class="footer-title-circle"></div>
+					<div class="footer-rights">
+						<p>&copy; 2020г Все права защищены</p>
+						<p>Сделано в рамках курса учебной платформы <a href="https://annblok.ru/workshop" target="_blank">Annblok</a></p>
 					</div>
-					<div class="header-socials">
-						<a href="#" target = "_blank" class="header-socials__contakt">
-							<img src="icons/IN.svg" alt="Контакт">
-						</a>
-						<a href="#" target = "_blank" class="header-socials__contakt">
-							<img src="icons/FB.svg" alt="Фэйсбук">
-						</a>
-					</div>
-				</div>
-				<div class="footer-rights">
-					<p>&copy; 2020г Все права защищены</p>
-					<p>Сделано в рамках курса учебной платформы Annblok</p>
 				</div>
 			</div>
 		</footer>
@@ -386,13 +386,13 @@
 			</div>
 			<ul class="header-nav">
 				<li class="header-menu-item">
-					<a href="#" class="header-menu-link">Мероприятие</a>
+					<a href="#upcoming-events-scroll" class="header-menu-link scroll">Мероприятие</a>
 				</li>
 				<li class="header-menu-item">
-					<a href="#" class="header-menu-link">Расписание</a>
+					<a href="#training-schedule-section" class="header-menu-link scroll">Расписание</a>
 				</li>
 				<li class="header-menu-item">
-					<a href="#" class="header-menu-link">О компании</a>
+					<a href="#about-company-section" class="header-menu-link scroll">О компании</a>
 				</li>
 			</ul>
 			<div class="modal-socials">
@@ -424,7 +424,7 @@
        }
 
 		 // Smooth scroll
-		 const links = document.querySelectorAll(".main-button-scroll");
+		 const links = document.querySelectorAll(".scroll");
 
 		for (const link of links) {
 		link.addEventListener("click", clickHandler);
