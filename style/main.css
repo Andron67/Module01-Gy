@@ -823,21 +823,27 @@ body {
 @media(max-width: 672px) {
 	.about-company-footer__media {
 		display: block;
+		margin-bottom: 50px;
 	}
 
-	.about-company-description-image {
+	.about-company-footer__media .about-company-description-box-button {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.about-company-button {
 		display: none;
 	}
 
 	.about-company-image {
-		display: block;
+		display: none;
 	}
 }
 
 @media(max-width: 479px) {
 	.about-company-benefits-items {
 		display: grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1frfr 1fr;
 		grid-template-columns: 1fr;
 	}
 
