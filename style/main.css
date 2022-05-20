@@ -1402,14 +1402,13 @@ body {
 
 .modal {
 	background-color: #F3F3F3;
-	max-width: 587px;
 	width: 100%;
 	text-align: end;
 	position: absolute;
 	top: -600px;
-	left: -21%;
-	right: 0px;
-	margin: 15px auto -30px;
+	left: 0px;
+	right: -100px;
+	margin: 15px auto 0px;
 	box-sizing: border-box;
 	transition: .5s;
 }
@@ -1422,7 +1421,7 @@ body {
 
 @media(max-width: 479px) {
 	.modal {
-		left: 0%;
+		left: -23%;
 	}
 }
 
