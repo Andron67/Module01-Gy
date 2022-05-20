@@ -83,13 +83,28 @@ body {
 
 .header-menu-link {
 	color: #2B3541;
+	cursor: pointer;
+	display: block;
 	font-size: 18px;
+	line-height: 2;
 	font-weight: 400;
 }
 
+.header-menu-link::after {
+	content: ' ';
+	width: 100%;
+	height: 1px;
+	background: transparent;
+	display: block;
+	transition: all .3s ease 0s;
+}
+
 .header-menu-link:hover {
-	border-bottom: 1px solid #2B3541;
-	cursor: pointer;
+	color: #181F27;
+}
+
+.header-menu-link:hover::after {
+	background-color: #2B3541;
 }
 
 .header-socials {
@@ -664,6 +679,17 @@ body {
 	text-decoration: underline;
 }
 
+.checkbox {
+	transition: 0.9s;
+	transform: scale(1);
+	opacity: 0.8;
+}
+
+.checkbox:hover {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
 .checkbox:checked,
 .checkbox:not(:checked){
    position: absolute;
@@ -681,10 +707,10 @@ body {
 .checkbox:checked + label::before{
    content:'';
    position: absolute;
-   width: 16px;
-   height: 16px;
-   left:0;
-   top:calc(50% - 8px);
+   width: 19px;
+   height: 19px;
+   left: 3px;
+   top:calc(50% - 9px);
    background-color: #2B3541;
    border-radius: 2px;
    border: 2px solid #2B3541;
@@ -694,7 +720,7 @@ body {
 .checkbox:checked + label::after{
    content:'';
    position: absolute;
-   width: 12px;
+   width: 16px;
    height: 12px;
    transition: all .2s ease 0s;
    opacity: 1;
@@ -702,7 +728,7 @@ body {
    top: calc(50% - 6px);
    background-size: cover;
    background-repeat: no-repeat;
-   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+   background-image: url(../images/galka.svg);
 }
 
 /* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
@@ -723,7 +749,7 @@ body {
    content:'';
    position: absolute;
    width: 12px;
-   height: 12px;
+   height: 16px;
    transition: all .2s ease;
    opacity: 0;
    left: 4px;
@@ -732,7 +758,7 @@ body {
    background-color: transparent;
    background-repeat: no-repeat;
    background-size: cover;
-   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+   background-image: url(../images/galka.svg);
 }
 
 .radio:checked + label::before{
