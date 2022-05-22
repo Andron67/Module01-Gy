@@ -337,7 +337,7 @@ body {
 
 .upcoming-events-card__gradient:hover {
 	background: linear-gradient(180deg, rgb(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
-	transition: 0.9s;
+	transition: all .9s ease 0s;
 }
 
 .upcoming-events-card__button {
@@ -359,10 +359,6 @@ body {
 
 .upcoming-events-card:hover .upcoming-events-card__button {
 	opacity: 1;
-}
-
-.upcoming-events-card:hover .upcoming-events-card__type {
-	opacity: 0;
 }
 
 .upcoming-events-card__data {
@@ -398,11 +394,19 @@ body {
 }
 
 .upcoming-events-card__type p {
+	display: inline-block;
 	color: #2B3541;
 	font-size: 18px;
 	line-height: 1.5;
 	font-weight: 400;
-	text-transform: uppercase;
+}
+
+.upcoming-events-card:hover .upcoming-events-card__type {
+	opacity: 0;
+}
+
+.upcoming-events-card__add {
+	opacity: 0;
 }
 
 /*-------- TRAINING SCHEDULE -----------*/
@@ -1200,6 +1204,23 @@ body {
 		background-position: center;
 		grid-column: 1/3;
 		grid-row: 2/3;
+	}
+
+	.upcoming-events-card__type {
+		max-width: 122px;
+		width: 100%;
+		left: 0px;
+	}
+
+	.upcoming-events-card__type p {
+		display: inline-block;
+	}
+
+	.upcoming-events-card__add {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		opacity: 1;
 	}
 
 	/*-------- TRAINING SCHEDULE -----------*/
