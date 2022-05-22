@@ -1207,13 +1207,15 @@ body {
 	}
 
 	.upcoming-events-card__type {
-		max-width: 122px;
+		padding: 7px 12px;
+		max-width: 87px;
 		width: 100%;
 		left: 0px;
 	}
 
 	.upcoming-events-card__type p {
 		display: inline-block;
+		font-size: 12px;
 	}
 
 	.upcoming-events-card__add {
