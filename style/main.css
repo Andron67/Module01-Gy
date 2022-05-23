@@ -1268,7 +1268,7 @@ body {
 	/*-------- subscription form  -----------*/
 	.subscription-form-box form {
 		display: grid;
-		gap: 40px;
+		gap: 10px;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 	}
@@ -1284,21 +1284,21 @@ body {
 	}
 
 	.subscription-form-box .form-button {
+		margin: 0px;
 		grid-column: 1/2;
 		grid-row: 3/4;
 	}
 
 .form-title {
 		text-align: center;
-		margin: 0px auto;
 		max-width: 201px;
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 		width: 100%;
 	}
 
 	.form-title h2 {
 		font-size: 26px;
-		line-height: 1.25;
+		line-height: 1.0;
 	}
 }
 
