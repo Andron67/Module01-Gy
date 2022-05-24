@@ -1469,27 +1469,15 @@ body {
 
 .modal {
 	background-color: #F3F3F3;
+	max-width: 567px;
 	width: 100%;
 	text-align: end;
 	position: absolute;
 	top: -600px;
 	left: 0px;
-	right: -100px;
 	margin: 15px auto 0px;
 	box-sizing: border-box;
 	transition: .5s;
-}
-
-@media(min-width: 479px) {
-	.modal {
-		left: -15%;
-	}
-}
-
-@media(max-width: 479px) {
-	.modal {
-		left: -23%;
-	}
 }
 
 .modal-container {
@@ -1521,7 +1509,6 @@ body {
 
 .modal .header-menu-item {
 	text-align: start;
-	max-width: 567px;
 	padding-bottom: 20px;
 	width: 100%;
 }
